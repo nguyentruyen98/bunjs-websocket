@@ -19,7 +19,7 @@ const server = Bun.serve({
       ws.publish("chat", msg);
     },
     perMessageDeflate: false,
-    publishToSelf: false,
+    publishToSelf: true,
   },
 });
 console.log(
